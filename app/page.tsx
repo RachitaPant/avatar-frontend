@@ -52,7 +52,7 @@ export default function Page() {
   }, [room]);
 
   return (
-    <main data-lk-theme="default" className="h-full grid  bg-[var(--lk-bg)]">
+    <main data-lk-theme="default" className="h-screen grid bg-[var(--lk-bg)]">
       <RoomContext.Provider value={room}>
         <div className="  w-full h-full ">
           <SimpleVoiceAssistant onConnectButtonClicked={onConnectButtonClicked} />
