@@ -52,12 +52,22 @@ export default function Page() {
   }, [room]);
 
   return (
-    <main data-lk-theme="default" className="h-screen grid bg-[var(--lk-bg)]">
-      <RoomContext.Provider value={room}>
-        <div className="  w-full h-full ">
+    <main data-lk-theme="default" className="h-screen grid bg-[var(--lk-bg)] ">
+      <div className="absolute inset-0 z-0 pointer-events-none">
+        <div
+          className="h-full w-full"
+          style={{
+            background:
+              "radial-gradient(circle at 50% 0%, rgba(180,180,255,0.80), transparent 40%)",
+          }}
+        />
+      </div>
+
+      <div className="relative z-10 ">
+        <RoomContext.Provider value={room}>
           <SimpleVoiceAssistant onConnectButtonClicked={onConnectButtonClicked} />
-        </div>
-      </RoomContext.Provider>
+        </RoomContext.Provider>
+      </div>
     </main>
   );
 }
@@ -74,18 +84,11 @@ function SimpleVoiceAssistant(props: { onConnectButtonClicked: () => void }) {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="h-full w-full flex flex-col   "
+            className=" w-full flex flex-col   min-h-screen justify-center"
           >
             {/* HERO */}
-            <div className="relative text-center space-y-32 h-full w-full">
+            <div className="relative text-center space-y-32 min-h-screen w-full flex flex-col justify-center items-center">
               {/* Soft background halo */}
-              <div
-                className="absolute inset-0 -z-10 -my-5"
-                style={{
-                  background:
-                    "radial-gradient(circle at 50% 0%, rgba(180,180,255,0.80), transparent 40%)",
-                }}
-              />
 
               <motion.div
                 initial={{ y: 30, opacity: 0 }}
