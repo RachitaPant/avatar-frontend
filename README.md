@@ -1,12 +1,12 @@
 <img src="./.github/assets/app-icon.png" alt="Voice Assistant App Icon" width="100" height="100">
 
-# Roman Empire Study Partner with Tavus Avatar
+# Study Guide with Tavus Avatar
 
 This is a voice-enabled educational assistant built with [LiveKit Agents](https://docs.livekit.io/agents) and [Tavus Avatars](https://tavus.io/). It creates an interactive learning experience focused on the Fall of the Roman Empire, featuring flash cards, quizzes, and Socratic teaching methods.
 
 ## Features
 
-- **Conversational Learning**: AI tutor uses Socratic method to guide students through complex historical topics
+- **Conversational Learning**: AI tutor uses Socratic method to guide students through complex topics
 - **Interactive Flash Cards**: Visual aids for key concepts that can be flipped to show questions or answers
 - **Multiple-Choice Quizzes**: Test your knowledge with interactive quizzes that provide immediate feedback
 - **Realistic Avatar**: Powered by Tavus for a more engaging visual learning experience
@@ -44,4 +44,4 @@ python tavus.py
 
 ## Contributing
 
-This project is open source and we welcome contributions! Please open a PR or issue through GitHub, and don't forget to join us in the [LiveKit Community Slack](https://livekit.io/join-slack)!
+This project is open source and we welcome contributions! Please open a PR or issue through GitHub
